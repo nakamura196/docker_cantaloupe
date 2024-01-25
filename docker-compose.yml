@@ -1,0 +1,14 @@
+services:
+  cantaloupe:
+    image: islandora/cantaloupe:2.0.10
+    environment:
+      CANTALOUPE_FILESYSTEMSOURCE_BASICLOOKUPSTRATEGY_PATH_PREFIX: /images/
+      CANTALOUPE_SOURCE_STATIC: FilesystemSource
+      CANTALOUPE_ENDPOINT_ADMIN_ENABLED: false
+      CANTALOUPE_ENDPOINT_ADMIN_SECRET: my_admin_pass
+    volumes:
+      - ${IIIF_IMAGES}:/images
+    restart: always
+    # comment in to enable access to cantaloupe on port 8182, including admin interface
+    ports:
+      - 8182:8182
