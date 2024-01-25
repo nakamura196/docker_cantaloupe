@@ -13,3 +13,5 @@ docker-compose up -d
 ## Access
 
 http://localhost:8182/iiif/2/baby_role_towel_utsubuse.png/full/full/0/default.jpg
+
+Image from [https://www.irasutoya.com/](https://www.irasutoya.com/)
