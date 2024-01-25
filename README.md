@@ -1,5 +1,7 @@
 # Docker Cantaloupe
 
+Try the Docker version of Cantaloupe
+
 ## Usage
 
 ```
