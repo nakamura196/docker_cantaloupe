@@ -1,2 +1,5 @@
 .DS_Store
 letsencrypt
+.env*
+!.env.example
+!.env.azure.example
